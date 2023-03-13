@@ -12,7 +12,6 @@ public class App {
 
 //	lấy Bean ra bằng cách
 		Outfit outfit = context.getBean(Outfit.class);
-
 //		In ra xem thứ đó là gì
 		System.out.print("Instance" + outfit);
 //		Dùng hàm wear()
@@ -22,5 +21,9 @@ public class App {
 		System.out.print("Girl Instance: " + girl);
 		System.out.print("Girl Outfit:" + girl.outfit);
 		girl.outfit.wear();
+
+//		Boy boy = context.getBean(Boy.class);
+//		System.out.println(" Boy Outfit:" + boy.outfit);
+//		boy.outfit.wear();
 	}
 }
